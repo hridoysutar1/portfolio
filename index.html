@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7670d2eb06.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Exo+2:wght@500&family=Inconsolata:wght@800&family=Inspiration&family=Moon+Dance&family=Passions+Conflict&family=Seymour+One&display=swap');
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel&family=Courgette&family=Playfair+Display&family=Roboto+Mono:ital,wght@1,200&family=Special+Elite&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Courgette&family=Playfair+Display&family=Roboto+Mono:ital,wght@1,200&family=Special+Elite&family=Ubuntu:wght@300&display=swap');
+    </style>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <title>Hridoy</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h3 class="logo"> <span>Hri</span>doy</h3>
+
+                <ul id="sidemenu">
+                    <li><a href="#header" class="nav active-nav" onclick="changeActiveNav()">Home</a></li>
+                    <li><a href="#about" class="nav" onclick="changeActiveNav()">About</a></li>
+                    <li><a href="#services" class="nav" onclick="changeActiveNav()">Services</a></li>
+                    <li><a href="#portfolio" class="nav" onclick="changeActiveNav()">Portfolio</a></li>
+                    <li><a href="#contact" class="nav" onclick="changeActiveNav()">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hello my name is</p>
+                <h1> <span> Hridoy Sutar </span> </h1>
+                <div>I'm a <span id="typing"></span></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- --------------------------------------------------------about--------------------------------------------------------------------- -->
+    <div id="about">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="about-col-1">
+                    <img src="./images/mobile_photo4.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> <i class="fa-solid fa-circle-info"></i> About Me </h1>
+                    <br>
+                    <p class="p-text">Passionate full-stack engineer having good knowledge of developing scalable
+                        websites using a wide
+                        range of front-end and
+                        back-end skills. I am looking to enhance my skill set while contributing to a positive outcome.
+                    </p>
+                    <br>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <br>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Language</span><br> Java</li>
+                            <li><span>Frontend</span><br> AngularJs, HTML, CSS, JavaScript, Bootstrap</li>
+                            <li><span>Backend</span><br> Spring boot, Spring Core, Spring MVC</li>
+                            <li><span>Database</span><br> RDBMS, MySql</li>
+                            <li><span>Tools</span><br> Git, Github, Docker</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-Current</span><br>Mphasis <br> Working As a Full stack Deveoper.</li>
+                            <li><span>2021</span><br>SPARC <br> Web app development internship.</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018-2022</span><br>B.Tech <br> NIT Durgapur</li>
+                            <li><span>2015-2017</span><br> 12th <br> WBCHSE</li>
+                            <li><span>2014-2015</span><br> 10th <br> WBBSE</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--------------------------------------------------------------------Services--------------------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"><i class="fa-brands fa-creative-commons-nd"></i> My Services </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Create the design and layout of a website or web pages. It and can mean working on a brand new
+                        website or updating an already existing site.</p>
+                    <a href="#"></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Create user-friendly interfaces that enable users to understand how to use complex technical
+                        products.</p>
+                    <a href="#"></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gear"></i>
+                    <h2>Backend</h2>
+                    <p>Develop server-side web application logic and integration and activities,
+                        like writing APIs, creating libraries, and working with system components.</p>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- ----------------------------------------------------------Portfolio------------------------------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"><i class="fa-solid fa-briefcase"></i> Portfolio </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./img/hms1.png">
+                    <div class="layer">
+                        <h3>Hospital Management</h3>
+                        <p>A dynamic and responsive Java Hospital Management Web application managing inventory and
+                            laboratory
+                            management, as well as patient registration.</p>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/event2.png">
+                    <div class="layer">
+                        <h3>mAadhaar Application</h3>
+                        <p>The application is intended to register citizens and let them display ID to process their
+                            Aadhar Card application.
+                            Admin approves the aadhaar application and issues a new Aadhaar number.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/aadhaar1.png">
+                    <div class="layer">
+                        <h3>Event Management</h3>
+                        <p>The administration team of the organization can view and add their
+                            resources such as employees and keep their data for future reference</p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+
+        </div>
+    </div>
+
+
+
+    <!-----------------------------------------------------------Contact-------------------------------------------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"><i class="fa-regular fa-address-card"></i> Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>hridoysutar1@gmail.com</p>
+                    <!-- <p><i class="fa-solid fa-phone"></i>01234567890</p> -->
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href=""> <i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+                    <a href="./files/cv.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit </button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> © 2023, Hridoy Sutar. All rights reserved.</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- ___________________________________________________________________________
+         --------------------------Script----------------------------------------------
+        _______________________________________________________________________________ -->
+
+    <script>
+        var navs = document.getElementsByClassName("nav")
+        function changeActiveNav() {
+            for (navItem of navs) {
+                navItem.classList.remove("active-nav")
+
+            }
+            event.currentTarget.classList.add("active-nav")
+
+        }
+    </script>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+        function openmenu() {
+            sidemenu.style.right = "0"
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyuaM3Gifw3LNDbENyFXB0fgFQnqV5pKlPGVgWEWlaFV1xkb2fQS1ZbsHeEcJohexMCmg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script>
+        var typed = new Typed("#typing", {
+            strings: ["UI&UX Designer", "Web Developer", "Backend Developer"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+
+        })
+    </script>
+
+</body>
+
+</html>
